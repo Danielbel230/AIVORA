@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import FrascoSVG from './FrascoSVG'
+import logo from '../assets/images/logo.jpeg'
 
 const GOLD = '#C9A84C'
 const IVORY = '#F5F0E8'
@@ -147,7 +148,7 @@ export default function LandingPage({ onStart }) {
         alignItems: 'center', justifyContent: 'space-between',
       }}>
         <img
-          src="/src/assets/images/logo.jpeg"
+          src={logo}
           alt="Aivora"
           className="lp-logo-img"
           style={{ height: '40px', width: 'auto', objectFit: 'contain' }}
@@ -239,7 +240,7 @@ export default function LandingPage({ onStart }) {
           {/* Left column */}
           <div className="lp-hero-left" style={{ width: '55%', paddingLeft: '8vw', paddingRight: '4vw' }}>
             <div style={reveal(heroV, 0)}>
-              <img src="/src/assets/images/logo.jpeg" alt="Aivora" style={{ height: '40px', width: 'auto', objectFit: 'contain', marginBottom: '40px', display: 'block' }} />
+              <img src={logo} alt="Aivora" style={{ height: '40px', width: 'auto', objectFit: 'contain', marginBottom: '40px', display: 'block' }} />
             </div>
 
             <p className="font-courier" style={{ ...reveal(heroV, 50), color: GOLD, fontSize: '10px', letterSpacing: '0.25em', textTransform: 'uppercase', marginBottom: '24px' }}>
